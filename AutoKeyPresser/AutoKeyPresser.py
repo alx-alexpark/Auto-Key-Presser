@@ -1,9 +1,9 @@
 from pynput.keyboard import Key, Controller
 import time
-import keyboard
+
 keyboard = Controller()
 presskey = input("What Key to Spam Press???")
-times = int(input("how many times to press?? If infinity type -1"))
+times = float(input("how many times to press?? If infinity type -1"))
 delaytime = float(input("What delay Between Pressing Keys?(seconds)"))
 input("press enter to continue")
 
