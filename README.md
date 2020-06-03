@@ -1,3 +1,3 @@
 # Auto-Key-Presser
 Automatically Presses Keys on you keyboard.
-Needs the Python "pynput"
+Needs the Python package "pynput"
