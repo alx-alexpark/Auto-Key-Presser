@@ -15,7 +15,9 @@ try:
     try:
         delaytime = float(delaytime)
     except:
-
+        print('Error')
+        time.sleep(.5)
+        main()
     input("press enter to continue")
 
 
