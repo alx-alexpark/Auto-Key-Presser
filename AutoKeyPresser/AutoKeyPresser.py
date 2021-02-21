@@ -13,7 +13,6 @@ try:
         time.sleep(.5)
         clear()
         main()
-main()
     delaytime = input("What delay Between Pressing Keys?(seconds)\n>")
     try:
         delaytime = float(delaytime)
