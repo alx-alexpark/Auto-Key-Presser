@@ -1,13 +1,21 @@
 from pynput.keyboard import Key, Controller
 import time
+def main():
 try:
     keyboard = Controller()
     presskey = input("What Key to Spam Press???\n>")
     times = input("how many times to press?? If infinity type -1\n>")
-    Try:
-        float(times)
-    Except:
-    delaytime = float(input("What delay Between Pressing Keys?(seconds)\n>"))
+    try:
+        times = float(times)
+    except:
+        print('Error')
+        time.sleep(.5)
+        main()
+    delaytime = input("What delay Between Pressing Keys?(seconds)\n>")
+    try:
+        delaytime = float(delaytime)
+    except:
+
     input("press enter to continue")
 
 
@@ -29,4 +37,4 @@ try:
             #keyboard.send(presskey)
             time.sleep(delaytime)
 except:
-	print("A error occured")
+	print("An error occured")
