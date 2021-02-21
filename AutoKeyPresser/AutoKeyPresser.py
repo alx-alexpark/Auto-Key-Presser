@@ -3,7 +3,10 @@ import time
 try:
     keyboard = Controller()
     presskey = input("What Key to Spam Press???\n>")
-    times = float(input("how many times to press?? If infinity type -1\n>"))
+    times = input("how many times to press?? If infinity type -1\n>")
+    Try:
+        float(times)
+    Except:
     delaytime = float(input("What delay Between Pressing Keys?(seconds)\n>"))
     input("press enter to continue")
 
