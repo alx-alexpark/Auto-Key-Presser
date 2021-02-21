@@ -38,5 +38,6 @@ try:
             keyboard.release(presskey)
             #keyboard.send(presskey)
             time.sleep(delaytime)
+    input('done, press enter to exit')
 except:
 	print("An error occured")
