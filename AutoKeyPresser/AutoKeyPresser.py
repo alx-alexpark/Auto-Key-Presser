@@ -1,4 +1,5 @@
 from pynput.keyboard import Key, Controller
+from click import clear
 import time
 def main():
 try:
@@ -10,13 +11,16 @@ try:
     except:
         print('Error')
         time.sleep(.5)
+        clear()
         main()
+main()
     delaytime = input("What delay Between Pressing Keys?(seconds)\n>")
     try:
         delaytime = float(delaytime)
     except:
         print('Error')
         time.sleep(.5)
+        clear()
         main()
     input("press enter to continue")
 
